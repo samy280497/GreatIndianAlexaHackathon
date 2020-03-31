@@ -1,0 +1,100 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lingexa",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answerValues"
+                        }
+                    ],
+                    "samples": [
+                        "I think it's {answer}",
+                        "{answer}",
+                        "{answer} did that",
+                        "that was {answer}"
+                    ]
+                },
+                {
+                    "name": "NewGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "let's play a game",
+                        "start over",
+                        "for my first question"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "answerValues",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "katze",
+                                "synonyms": [
+                                    "k. a. t. z. e.",
+                                    "k a t z e ",
+                                    "K A T Z E ",
+                                    "k.a.t.z.e"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hund",
+                                "synonyms": [
+                                    "H U N D",
+                                    "h u n d",
+                                    "h.u.n.d.",
+                                    "h. u. n. d."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "welpe",
+                                "synonyms": [
+                                    "w. e. l. p. e.",
+                                    "w.e.l.p.e.",
+                                    "WELPE",
+                                    "W.E.L.P.E."
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kaninchen",
+                                "synonyms": [
+                                    "k.a.n.i.n.c.h.e.n",
+                                    "k a n i n c h e n",
+                                    "K.A.N.I.N.C.H.E.N.",
+                                    "K. A. N. I. N. C. H. E. N."
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
